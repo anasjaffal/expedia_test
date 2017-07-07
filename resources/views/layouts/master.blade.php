@@ -29,8 +29,7 @@
     <![endif]-->
 </head>
 <body id="page-top" class="index">
-<div id="wrapper">
-    <div id="home">
+
         @include('layouts.partials._navigation')
 
         @include('layouts.partials._header')
@@ -532,8 +531,6 @@
             </div>
         </div>
 
-    </div>
-</div>
 @include('layouts.partials._footer')
 
 </body>
