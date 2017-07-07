@@ -10,22 +10,22 @@
     <title>Expedia - Anas Jaffal</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="shortcut icon" href="{{asset('/img/favicon.ico')}}" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <!-- CSS FILES -->
-    <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/supersized.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/supersized.shutter.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/flexslider.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/prettyPhoto.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/datepicker.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/selectordie.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/main.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/2035.responsive.css')}}">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/supersized.css">
+    <link rel="stylesheet" href="css/supersized.shutter.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/selectordie.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/2035.responsive.css">
 
-    <script src="{{asset('/js/vendor/modernizr-2.8.3-respond-1.1.0.min.js')}}"></script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.1.0.min.js"></script>
     <!-- Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="{{asset('/js/respond.min.js')}}"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body id="page-top" class="index">

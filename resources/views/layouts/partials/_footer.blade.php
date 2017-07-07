@@ -1,17 +1,17 @@
 <!-- JS FILES -->
-<script src="{{asset('/js/vendor/jquery-1.11.1.min.js')}}"></script>
-<script src="{{asset('/js/vendor/bootstrap.min.js')}}"></script>
-<script src="{{asset('/js/retina-1.1.0.min.js')}}"></script>
-<script src="{{asset('/js/jquery.flexslider-min.js')}}"></script>
-<script src="{{asset('/js/superfish.pack.1.4.1.js')}}"></script>
-<script src="{{asset('/js/jquery.slicknav.min.js')}}"></script>
-<script src="{{asset('/js/bootstrap-datepicker.js')}}"></script>
-<script src="{{asset('/js/selectordie.min.js')}}"></script>
-<script src="{{asset('/js/jquery.parallax-1.1.3.js')}}"></script>
-<script src="{{asset('/js/jquery.prettyPhoto.js')}}"></script>
-<script src="{{asset('/js/supersized.3.2.7.min.js')}}"></script>
-<script src="{{asset('/js/supersized.shutter.min.js')}}"></script>
-<script src="{{asset('/js/main.js')}}"></script>
+<script src="js/vendor/jquery-1.11.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/superfish.pack.1.4.1.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/selectordie.min.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized.shutter.min.js"></script>
+<script src="js/main.js"></script>
 <script type="text/javascript">
     jQuery(function($){
         $.supersized({
