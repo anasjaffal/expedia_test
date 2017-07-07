@@ -16,7 +16,7 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="home-room-box">
                             <div class="room-image">
-                                <img alt="Room Images" class="img-responsive" src="temp/room-image-1.jpg">
+                                <img alt="Room Images" class="img-responsive" src="{{$hotel->hotelInfo->hotelImageUrl}}">
                                 <div class="home-room-details">
                                     <h5><a href="#">{{$hotel->hotelInfo->hotelName}}</a></h5>
                                     <div class="pull-left">
