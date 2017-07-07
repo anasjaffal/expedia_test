@@ -42,7 +42,6 @@
             <div class="row pos-center">
                 <div class="reserve-form-area">
                     {{ Form::open(array('url' => '/', 'action' => 'Controller@method', 'id' => 'ajax-reservation-form')) }}
-                    {{ Form::token(); }}
                         <ul class="clearfix">
                             <li class="li-input">
                                 <label>ARRIVAL</label>
