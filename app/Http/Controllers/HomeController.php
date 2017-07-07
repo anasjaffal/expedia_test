@@ -13,7 +13,7 @@ class HomeController extends ExpediaController
 
 
         //print_r($response);
-        return view('pages.one');
+        return view('pages.one',['hotels'=>array(1,2,3,4,5,6,7,8,9)]);
 
     }
 

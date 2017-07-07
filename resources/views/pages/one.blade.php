@@ -4,66 +4,6 @@
 
 
     <div class="content"><!-- Content Section -->
-        <div class="about clearfix"><!-- About Section -->
-            <div class="container">
-                <div class="row">
-                    <div class="about-title pos-center">
-                        <h2>WELCOME TO PARADISE</h2>
-                        <div class="title-shape"><img alt="Shape" src="img/shape.png"></div>
-                        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Praesent <span class="active-color">commodo</span> cursus magna, vel scelerisque nisl .Nulleget urna mattis consectetur purus sit amet fermentum</p>
-                    </div>
-                    <div class="otel-info margint60">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="title-style-1 marginb40">
-                                <h5>GALLERY</h5>
-                                <hr>
-                            </div>
-                            <div class="flexslider">
-                                <ul class="slides">
-                                    <li><img alt="Slider 1" class="img-responsive" src="temp/otel-info-image-1.jpg" /></li>
-                                    <li><img alt="Slider 1" class="img-responsive" src="temp/otel-info-image-2.jpg" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="title-style-1 marginb40">
-                                <h5>ABOUT US</h5>
-                                <hr>
-                            </div>
-                            <p>Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget laci. Maecenas faucibus mollis interdum.</p>
-                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fer condimentum nibh, ut fermentum massa justo sit amet risus. mentum massa justo sit amet risus.</p>
-                            <p>Fusce dapibus, tellus ac cursus commodo ut fermentum massa. mentum massa justo sit amet risus.</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="title-style-1 marginb40">
-                                <h5>OUR NEWS</h5>
-                                <hr>
-                            </div>
-                            <div class="home-news">
-                                <div class="news-box clearfix">
-                                    <div class="news-time pull-left">
-                                        <div class="news-date pos-center"><div class="date-day">20<hr /></div>MAY</div>
-                                    </div>
-                                    <div class="news-content pull-left">
-                                        <h6><a href="#">News from us from now</a></h6>
-                                        <p class="margint10">Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui <a class="active-color" href="#">[...]</a></p>
-                                    </div>
-                                </div>
-                                <div class="news-box clearfix">
-                                    <div class="news-time pull-left">
-                                        <div class="news-date pos-center"><div class="date-day">20<hr /></div>MAY</div>
-                                    </div>
-                                    <div class="news-content pull-left">
-                                        <h6><a href="#">News from us from now</a></h6>
-                                        <p class="margint10">Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue <a class="active-color" href="#">[...]</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="explore-rooms margint30 clearfix"><!-- Explore Rooms Section -->
             <div class="container">
                 <div class="row">
@@ -71,6 +11,8 @@
                         <h3>EXPLORE ROOMS</h3>
                         <hr>
                     </div>
+
+                    @foreach($hotels as $hotel)
                     <div class="col-lg-4 col-sm-6">
                         <div class="home-room-box">
                             <div class="room-image">
@@ -109,86 +51,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="home-room-box">
-                            <div class="room-image">
-                                <img alt="Room Images" class="img-responsive" src="temp/room-image-6.jpg">
-                                <div class="home-room-details">
-                                    <h5><a href="#">The King Room</a></h5>
-                                    <div class="pull-left">
-                                        <ul>
-                                            <li><i class="fa fa-calendar"></i></li>
-                                            <li><i class="fa fa-flask"></i></li>
-                                            <li><i class="fa fa-umbrella"></i></li>
-                                            <li><i class="fa fa-laptop"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pull-right room-rating">
-                                        <ul>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star inactive"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="room-details">
-                                <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tibulum at ero[...]</p>
-                            </div>
-                            <div class="room-bottom">
-                                <div class="pull-left"><h4>89$<span class="room-bottom-time">/ Day</span></h4></div>
-                                <div class="pull-right">
-                                    <div class="button-style-1">
-                                        <a href="#">BOOK NOW</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="home-room-box">
-                            <div class="room-image">
-                                <div class="room-features">FEATURED</div>
-                                <img alt="Room Images" class="img-responsive" src="temp/room-image-3.jpg">
-                                <div class="home-room-details">
-                                    <h5><a href="#">Awesome Suits</a></h5>
-                                    <div class="pull-left">
-                                        <ul>
-                                            <li><i class="fa fa-calendar"></i></li>
-                                            <li><i class="fa fa-flask"></i></li>
-                                            <li><i class="fa fa-umbrella"></i></li>
-                                            <li><i class="fa fa-laptop"></i></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pull-right room-rating">
-                                        <ul>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star inactive"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="room-details">
-                                <p>Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tibulum at ero[...]</p>
-                            </div>
-                            <div class="room-bottom">
-                                <div class="pull-left"><h4>89$<span class="room-bottom-time">/ Day</span></h4></div>
-                                <div class="pull-right">
-                                    <div class="button-style-1">
-                                        <a href="#">BOOK NOW</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
+
+
+
+
         <div id="parallax123" class="parallax parallax-one clearfix margint60"><!-- Parallax Section -->
             <div class="support-section">
                 <div class="container">
