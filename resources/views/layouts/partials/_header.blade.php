@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row pos-center">
                 <div class="reserve-form-area">
-                    <form action="#" method="post" id="ajax-reservation-form">
+                    <form action="searchForHotels" method="post" id="ajax-reservation-form">
                         <ul class="clearfix">
                             <li class="li-input">
                                 <label>ARRIVAL</label>
