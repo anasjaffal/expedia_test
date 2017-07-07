@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/','HomeController@index');
+Route::get('/', 'HomeController@index');
 
-Route::post('/searchForHotels',function(){
-  return "<h1>hello </h1>";
-}
-//'HomeController@searchForHotels'
-);
+Route::get('/searchForHotels', 'HomeController@searchForHotels');
