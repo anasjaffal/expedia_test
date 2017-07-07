@@ -230,11 +230,11 @@ $(window).load(function(){
 /* Isotope */
 var $container = $('.portfolio-box');
 var $filter = $('.portfolio-filters');
-$container.isotope({
-    filter : '*',
-    layoutMode : 'sloppyMasonry',
-    animationOptions : {duration: 400}
-});
+// $container.isotope({
+//     filter : '*',
+//     layoutMode : 'sloppyMasonry',
+//     animationOptions : {duration: 400}
+// });
 $filter.find('a').click(function() {
     var selector = $(this).attr('data-filter');
     $filter.find('a').removeClass('active');
