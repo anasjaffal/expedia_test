@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row pos-center">
                 <div class="reserve-form-area">
-                    {{ Form::open(array('url' => '/', 'action' => 'Controller@method', 'id' => 'ajax-reservation-form')) }}
+                    <form action="#" method="post" id="ajax-reservation-form">
                         <ul class="clearfix">
                             <li class="li-input">
                                 <label>ARRIVAL</label>
@@ -88,7 +88,7 @@
                                 </div>
                             </li>
                         </ul>
-                    {{ Form::close() }}
+                    </form>
                 </div>
             </div>
         </div>
