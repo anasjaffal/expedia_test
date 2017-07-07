@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row pos-center">
                 <div class="reserve-form-area">
-                    <form action="searchForHotels" method="post" id="ajax-reservation-form">
+                    <form action="{{route('/postSearch')}}"  method="post" id="">
                         <ul class="clearfix">
                             <li class="li-input">
                                 <label>ARRIVAL</label>
@@ -84,7 +84,7 @@
                             </li>
                             <li>
                                 <div class="button-style-1">
-                                    <a id="res-submits" href="#" onclick="$('#ajax-reservation-form').submit();"><i class="fa fa-search"></i>SEARCH</a>
+                                    <input type="submit" id="res-submits" /><i class="fa fa-search"></i>SEARCH
                                 </div>
                             </li>
                         </ul>

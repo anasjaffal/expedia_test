@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class HomeController extends ExpediaController
 {
 
@@ -20,7 +22,6 @@ class HomeController extends ExpediaController
     public function searchForHotels(){
 
 
-        print_r('here'); die;
 
         $response = $this->setHttpMethod('GET')
             ->setHttpParams('scenario=deal-finder&page=foo&uid=foo&productType=Hotel')
@@ -33,4 +34,9 @@ class HomeController extends ExpediaController
 
     }
 
+    public function postSearch(Request $request)
+    {
+        print_r($request->input('data')); die;
+
+    }
 }
