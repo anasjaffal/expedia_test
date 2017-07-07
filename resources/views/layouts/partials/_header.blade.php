@@ -41,15 +41,16 @@
         <div class="container">
             <div class="row pos-center">
                 <div class="reserve-form-area">
-                    <form action="#" method="post" id="ajax-reservation-form">
+                    {{ Form::open(array('url' => '/', 'action' => 'Controller@method', 'id' => 'ajax-reservation-form')) }}
+                    {{ Form::token(); }}
                         <ul class="clearfix">
                             <li class="li-input">
                                 <label>ARRIVAL</label>
-                                <input type="text" id="dpd1" name="dpd1" data-date-format="dd/mm/yyyy" class="date-selector" placeholder="&#xf073;" required />
+                                <input type="text" id="minTripStartDate" name="minTripStartDate" data-date-format="yyyy/mm/dd" class="date-selector" placeholder="&#xf073;" required />
                             </li>
                             <li class="li-input">
                                 <label>DEPARTURE</label>
-                                <input type="text" id="dpd2" name="dpd2" data-date-format="dd/mm/yyyy" class="date-selector" placeholder="&#xf073;" required />
+                                <input type="text" id="maxTripStartDate" name="maxTripStartDate" data-date-format="yyyy/mm/dd" class="date-selector" placeholder="&#xf073;" required />
                             </li>
                             <li class="li-select">
                                 <label>ROOMS</label>
@@ -88,7 +89,7 @@
                                 </div>
                             </li>
                         </ul>
-                    </form>
+                    {{ Form::close() }}
                 </div>
             </div>
         </div>
