@@ -35,95 +35,134 @@
         @include('layouts.partials._header')
 
         @yield('content')
-
         <div id="wrapper">
-            <div id="home">
-                <div class="header"><!-- Header Section -->
-                    <div class="pre-header"><!-- Pre-header -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="pull-left pre-address-b"><p><i class="fa fa-map-marker"></i> Manhattan square. 124 avenue. Bodrum</p></div>
+            <div class="header"><!-- Header Section -->
+                <div class="pre-header"><!-- Pre-header -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="pull-left pre-address-b"><p><i class="fa fa-map-marker"></i> Manhattan square. 124 avenue. Bodrum</p></div>
+                            <div class="pull-right">
+                                <div class="pull-left">
+                                    <ul class="pre-link-box">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#">Add Your Link</a></li>
+                                    </ul>
+                                </div>
                                 <div class="pull-right">
-                                    <div class="pull-left">
-                                        <ul class="pre-link-box">
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="#">Add Your Link</a></li>
+                                    <div class="language-box">
+                                        <ul>
+                                            <li><a href="#"><img alt="language" src="temp/english.png"><span class="language-text">ENGLISH</span></a></li>
+                                            <li><a href="#"><img alt="language" src="temp/germany.png"><span class="language-text">DEUTSCH</span></a></li>
+                                            <li><a href="#"><img alt="language" src="temp/france.png"><span class="language-text">FRANÇAIS</span></a></li>
+                                            <li><a href="#"><img alt="language" src="temp/poland.png"><span class="language-text">POLSKI</span></a></li>
                                         </ul>
                                     </div>
-                                    <div class="pull-right">
-                                        <div class="language-box">
-                                            <ul>
-                                                <li><a href="#"><img alt="language" src="temp/english.png"><span class="language-text">ENGLISH</span></a></li>
-                                                <li><a href="#"><img alt="language" src="temp/germany.png"><span class="language-text">DEUTSCH</span></a></li>
-                                                <li><a href="#"><img alt="language" src="temp/france.png"><span class="language-text">FRANÇAIS</span></a></li>
-                                                <li><a href="#"><img alt="language" src="temp/poland.png"><span class="language-text">POLSKI</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="main-header"><!-- Main-header -->
-                        <div class="container">
-                            <div class="row">
+                </div>
+                <div class="main-header"><!-- Main-header -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="pull-left">
+                                <div class="logo">
+                                    <a href="index.html"><img alt="Logo" src="img/logo.png" class="img-responsive" /></a>
+                                </div>
+                            </div>
+                            <div class="pull-right">
                                 <div class="pull-left">
-                                    <div class="logo">
-                                        <a href="index.html"><img alt="Logo" src="img/logo-light.png" class="img-responsive" /></a>
-                                    </div>
+                                    <nav class="nav">
+                                        <ul id="navigate" class="sf-menu navigate">
+                                            <li class="parent-menu active"><a href="index.html">HOMEPAGE</a>
+                                                <ul>
+                                                    <li><a href="index.html">Slider Homepage</a></li>
+                                                    <li><a href="index-full-screen.html">Full Screen Homepage</a></li>
+                                                    <li><a href="http://www.2035themes.com/luxen/boxed/">Boxed Homepage</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="parent-menu"><a href="#">FEATURES</a>
+                                                <ul>
+                                                    <li><a href="#">2 Homepages</a></li>
+                                                    <li><a href="#">Ajax/PHP Booking Form</a></li>
+                                                    <li><a href="#">Ultra Responsive</a></li>
+                                                    <li><a href="under-construction.html">Countdown Page</a></li>
+                                                    <li><a href="#">2 Category Pages</a></li>
+                                                    <li><a href="404.html">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="parent-menu"><a href="#">PAGES</a>
+                                                <ul>
+                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="team.html">Team</a></li>
+                                                    <li><a href="category-grid.html">Category Grid</a></li>
+                                                    <li><a href="room-single.html">Room Details</a></li>
+                                                    <li><a href="portfolio.html">Portfolio</a></li><li><a href="reservation-form-dark.html">Dark Reservation Form</a></li>
+
+                                                    <li><a href="reservation-form-light.html">Light Reservation Form</a></li>
+                                                    <li><a href="gallery.html">Gallery</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Single</a></li>
+                                                    <li><a href="left-sidebar-page.html">Left Sidebar Page</a></li>
+                                                    <li><a href="right-sidebar-page.html">Right Sidebar Page</a></li>
+                                                    <li><a href="under-construction.html">Under Construction</a></li>
+                                                    <li><a href="404.html">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="blog.html">NEWS</a></li>
+                                            <li><a href="contact.html">CONTACT</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                                 <div class="pull-right">
-                                    <div class="pull-left">
-                                        <nav class="nav">
-                                            <ul id="navigate" class="sf-menu navigate">
-                                                <li class="parent-menu active"><a href="index.html">HOMEPAGE</a>
-                                                    <ul>
-                                                        <li><a href="index.html">Slider Homepage</a></li>
-                                                        <li><a href="index-full-screen.html">Full Screen Homepage</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="parent-menu"><a href="#">FEATURES</a>
-                                                    <ul>
-                                                        <li><a href="#">2 Homepages</a></li>
-                                                        <li><a href="#">Ajax/PHP Booking Form</a></li>
-                                                        <li><a href="#">Ultra Responsive</a></li>
-                                                        <li><a href="under-construction.html">Countdown Page</a></li>
-                                                        <li><a href="#">2 Category Pages</a></li>
-                                                        <li><a href="404.html">404 Page</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="parent-menu"><a href="#">PAGES</a>
-                                                    <ul>
-                                                        <li><a href="about.html">About</a></li>
-                                                        <li><a href="category-grid.html">Category Grid</a></li>
-                                                        <li><a href="category-list.html">Category List</a></li>
-                                                        <li><a href="room-single.html">Room Details</a></li>
-                                                        <li><a href="reservation-form-dark.html">Dark Reservation Form</a></li>
-                                                        <li><a href="reservation-form-light.html">Light Reservation Form</a></li>
-                                                        <li><a href="gallery.html">Gallery</a></li>
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog-details.html">Blog Single</a></li>
-                                                        <li><a href="left-sidebar-page.html">Left Sidebar Page</a></li>
-                                                        <li><a href="right-sidebar-page.html">Right Sidebar Page</a></li>
-                                                        <li><a href="under-construction.html">Under Construction</a></li>
-                                                        <li><a href="404.html">404 Page</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="blog.html">NEWS</a></li>
-                                                <li><a href="contact.html">CONTACT</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <div class="pull-right">
-                                        <div class="button-style-1 margint45">
-                                            <a href="reservation-form-dark.html"><i class="fa fa-calendar"></i>BOOK NOW</a>
-                                        </div>
+                                    <div class="button-style-1 margint45">
+                                        <a href="reservation-form-dark.html"><i class="fa fa-calendar"></i>BOOK NOW</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="slider slider-home"><!-- Slider Section -->
+                <div class="flexslider slider-loading falsenav">
+                    <ul class="slides">
+                        <li>
+                            <div class="slider-textbox clearfix">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="slider-bar pull-left">WELCOME TO LUXEN PREMIUM HOTEL TEMPLATE...</div>
+                                        <div class="slider-triangle pull-left"></div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="slider-bar-under pull-left">5 STAR SUPPORT</div>
+                                        <div class="slider-triangle-under pull-left"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img alt="Slider 1" class="img-responsive" src="temp/sliderr-1.jpg" />
+                        </li>
+                        <li>
+                            <div class="slider-textbox clearfix">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="slider-bar pull-left">WELCOME TO LUXEN PREMIUM HOTEL TEMPLATE...</div>
+                                        <div class="slider-triangle pull-left"></div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="slider-bar-under pull-left">5 STAR SUPPORT</div>
+                                        <div class="slider-triangle-under pull-left"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img alt="Slider 1" class="img-responsive" src="temp/sliderr-2.jpg" />
+                        </li>
+                    </ul>
                 </div>
                 <div class="book-slider">
                     <div class="container">
@@ -133,11 +172,11 @@
                                     <ul class="clearfix">
                                         <li class="li-input">
                                             <label>ARRIVAL</label>
-                                            <input type="text" id="dpd1" name="dpd1" class="date-selector" placeholder="&#xf073;" />
+                                            <input type="text" id="dpd1" name="dpd1" data-date-format="dd/mm/yyyy" class="date-selector" placeholder="&#xf073;" required />
                                         </li>
                                         <li class="li-input">
                                             <label>DEPARTURE</label>
-                                            <input type="text" id="dpd2" name="dpd2" class="date-selector" placeholder="&#xf073;" />
+                                            <input type="text" id="dpd2" name="dpd2" data-date-format="dd/mm/yyyy" class="date-selector" placeholder="&#xf073;" required />
                                         </li>
                                         <li class="li-select">
                                             <label>ROOMS</label>
@@ -171,7 +210,7 @@
                                             </select>
                                         </li>
                                         <li>
-                                            <div class="button-style-1 margint40">
+                                            <div class="button-style-1">
                                                 <a id="res-submit" href="#"><i class="fa fa-search"></i>SEARCH</a>
                                             </div>
                                         </li>
@@ -198,7 +237,7 @@
                 <div class="about clearfix"><!-- About Section -->
                     <div class="container">
                         <div class="row">
-                            <div class="about-title pos-center margint60">
+                            <div class="about-title pos-center">
                                 <h2>WELCOME TO PARADISE</h2>
                                 <div class="title-shape"><img alt="Shape" src="img/shape.png"></div>
                                 <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Praesent <span class="active-color">commodo</span> cursus magna, vel scelerisque nisl .Nulleget urna mattis consectetur purus sit amet fermentum</p>
@@ -233,7 +272,7 @@
                                     <div class="home-news">
                                         <div class="news-box clearfix">
                                             <div class="news-time pull-left">
-                                                <div class="news-date pos-center"><div class="date-day">20<hr></div>MAY</div>
+                                                <div class="news-date pos-center"><div class="date-day">20<hr /></div>MAY</div>
                                             </div>
                                             <div class="news-content pull-left">
                                                 <h6><a href="#">News from us from now</a></h6>
@@ -242,7 +281,7 @@
                                         </div>
                                         <div class="news-box clearfix">
                                             <div class="news-time pull-left">
-                                                <div class="news-date pos-center"><div class="date-day">20<hr></div>MAY</div>
+                                                <div class="news-date pos-center"><div class="date-day">20<hr /></div>MAY</div>
                                             </div>
                                             <div class="news-content pull-left">
                                                 <h6><a href="#">News from us from now</a></h6>
@@ -514,7 +553,7 @@
                     <div class="pre-footer">
                         <div class="container">
                             <div class="row">
-                                <div class="pull-left"><p>© LUXEN OTELS 2014</p></div>
+                                <div class="pull-left"><p>© LUXEN OTELS 2015</p></div>
                                 <div class="pull-right">
                                     <ul>
                                         <li><p>CONNECT WITH US</p></li>
