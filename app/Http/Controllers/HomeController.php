@@ -11,9 +11,9 @@ class HomeController extends ExpediaController
         ->setHttpParams('scenario=deal-finder&page=foo&uid=foo&productType=Hotel')
         ->request();
 
-
-        //print_r($response);
-        return view('pages.one',['hotels'=>array(1,2,3,4,5,6,7,8,9)]);
+        $data = \GuzzleHttp\json_decode($response->getBody());
+        print_r($data);
+        return view('pages.one',['hotels'=>$data]);
 
     }
 
