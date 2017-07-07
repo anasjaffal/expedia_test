@@ -36,8 +36,7 @@ class HomeController extends ExpediaController
 
     public function postSearch(Request $request)
     {
-        die('here');
-       // print_r($request->input('data')); die;
+        print_r($request->input('data')); die;
 
     }
 }
