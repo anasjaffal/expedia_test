@@ -28,13 +28,15 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top" class="index">
+<body>
 
         @include('layouts.partials._navigation')
 
         @include('layouts.partials._header')
 
         @yield('content')
+        <!--[if lt IE 7]>
+        <![endif]-->
         <div id="wrapper">
             <div class="header"><!-- Header Section -->
                 <div class="pre-header"><!-- Pre-header -->
