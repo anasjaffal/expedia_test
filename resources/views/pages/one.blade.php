@@ -18,7 +18,7 @@
                             <div class="room-image">
                                 <img alt="Room Images" class="img-responsive" src="temp/room-image-1.jpg">
                                 <div class="home-room-details">
-                                    <h5><a href="#">{{$hotel->hotelName}}</a></h5>
+                                    <h5><a href="#">{{$hotel->hotelInfo->hotelName}}</a></h5>
                                     <div class="pull-left">
                                         <ul>
                                             <li><i class="fa fa-calendar"></i></li>
@@ -39,8 +39,8 @@
                                 </div>
                             </div>
                             <div class="room-details">
-                                <p>{{$hotel->hotelDestination}}</p>
-                                <p>{{$hotel->description}}</p>
+                                <p>{{$hotel->hotelInfo->hotelDestination}}</p>
+                                <p>{{$hotel->hotelInfo->description}}</p>
                             </div>
                             <div class="room-bottom">
                                 <div class="pull-left"><h4>89$<span class="room-bottom-time">/ Day</span></h4></div>
