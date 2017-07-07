@@ -38,7 +38,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="room-details">
+                            <div class="room-details" style="height: 130px;">
                                 <p>{{$hotel->hotelInfo->hotelDestination}}</p>
                                 <p>{{$hotel->hotelInfo->description}}</p>
                             </div>
