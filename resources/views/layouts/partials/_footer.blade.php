@@ -1,7 +1,7 @@
 <!-- JS FILES -->
 <script src="js/vendor/jquery-1.11.1.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
-{{--<script src="js/retina-1.1.0.min.js"></script>--}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.2/retina.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/superfish.pack.1.4.1.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
