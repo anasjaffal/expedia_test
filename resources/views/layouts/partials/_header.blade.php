@@ -84,7 +84,7 @@
                             </li>
                             <li>
                                 <div class="button-style-1">
-                                    <a id="res-submit" href="#"><i class="fa fa-search"></i>SEARCH</a>
+                                    <a id="res-submits" href="#" onclick="$('#ajax-reservation-form').submit();"><i class="fa fa-search"></i>SEARCH</a>
                                 </div>
                             </li>
                         </ul>
