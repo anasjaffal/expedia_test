@@ -13,4 +13,4 @@
 
 Route::get('/','HomeController@index');
 
-Route::post('/','HomeController@searchForHotels');
+Route::post('searchForHotels','HomeController@searchForHotels');
