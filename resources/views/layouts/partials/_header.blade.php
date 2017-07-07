@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row pos-center">
                 <div class="reserve-form-area">
-                    <form action="{{route('/search')}}"  method="post" >
+                    <form action="/search"  method="post" >
                         <ul class="clearfix">
                             <li class="li-input">
                                 <label>ARRIVAL</label>
