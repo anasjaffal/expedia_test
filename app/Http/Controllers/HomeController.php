@@ -38,8 +38,6 @@ class HomeController extends ExpediaController
     public function postSearch(Request $request)
     {
 
-        $resultsExist = true;
-
         $paramsArray = array(
             'destinationName'   => $request->input('destinationName'),
             'minTripStartDate'  => $request->input('dpd1'),
@@ -57,10 +55,14 @@ class HomeController extends ExpediaController
         $data = \GuzzleHttp\json_decode($response->getBody());
 
         if(!isset($data->offers->Hotel)){
-            $resultsExist = false;
+            $resultHotels = null;
+        } else{
+            $resultHotels = $data->offers->Hotel;
         }
 
-        return view('pages.one',['hotels'=> $data->offers->Hotel, 'results' => $resultsExist, 'searchDetails' => true]);
+
+
+        return view('pages.one',['hotels'=> $resultHotels, 'searchDetails' => true]);
     }
 
 }
