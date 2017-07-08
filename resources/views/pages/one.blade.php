@@ -9,8 +9,15 @@
                 <div class="row">
 
                     @if(isset($searchDetails))
+                        @foreach($hotels as $hotel)
+                            <div class="title-style-2 marginb40 pos-center">
+                                <h4>Destination: {{ $hotel->destination->longName}}</h4><br/>
+                                <h4>Travel Start Date: {{ $hotel->offerDateRange->travelStartDate[2]}} / {{ $hotel->offerDateRange->travelStartDate[1] }} / {{ $hotel->offerDateRange->travelStartDate[0] }} AND </h4>
+                                <h4>Travel End Date: {{ $hotel->offerDateRange->travelEndDate[2]}} / {{ $hotel->offerDateRange->travelEndDate[1] }}/ {{ $hotel->offerDateRange->travelEndDate[0] }}</h4>
+                                <hr>
+                            </div>
 
-
+                        @endforeach
                     @else
                         <div class="title-style-2 marginb40 pos-center">
                             <h3>EXPLORE OFFERS</h3>
