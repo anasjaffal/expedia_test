@@ -12,7 +12,7 @@ class HomeController extends ExpediaController
     public function index(){
 
         $response = $this->setHttpMethod('GET')
-        ->setHttpParams('scenario=deal-finder&page=foo&uid=foo&productType=Hotel&')
+        ->setHttpParams('scenario=deal-finder&page=foo&uid=foo&productType=Hotel')
         ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
@@ -49,9 +49,8 @@ class HomeController extends ExpediaController
 
         $queryParams = http_build_query($paramsArray);
 
-        print_r($this->defaultRequestParam . $queryParams);die;
         $response = $this->setHttpMethod('GET')
-            ->setHttpParams($this->defaultRequestParam . $queryParams)
+            ->setHttpParams($this->defaultRequestParam . '&' . $queryParams)
             ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
