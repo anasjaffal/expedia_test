@@ -30,8 +30,8 @@ class HomeController extends ExpediaController
             ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
-        //print_r($data->offers);
-        return view('pages.one',['hotels'=>$data->offers->Hotel, 'results' => ture]);
+
+        return view('pages.one',['hotels'=>$data->offers->Hotel, 'results' => true]);
 
 
     }
