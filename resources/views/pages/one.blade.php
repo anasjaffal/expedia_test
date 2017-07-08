@@ -91,7 +91,7 @@
                                     <div class="support-box pos-center back">
                                         <div class="support-box-title"><i class="fa fa-envelope"></i></div>
                                         <h4>E-MAIL ADDRESS</h4>
-                                        <p class="margint20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, et.<br />luxen@2035themes.com</p>
+                                        <p class="margint20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, et.<br />Expedia@2035themes.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-sm-3">
-                                <h6>ABOUT LUXEN</h6>
+                                <h6>ABOUT Expedia</h6>
                                 <ul class="footer-links">
                                     <li><a href="404.html">Error Page</a></li>
                                     <li><a href="about.html">About</a></li>
@@ -194,7 +194,7 @@
             <div class="pre-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="pull-left"><p>© LUXEN OTELS 2015</p></div>
+                        <div class="pull-left"><p>© Expedia 2017</p></div>
                         <div class="pull-right">
                             <ul>
                                 <li><p>CONNECT WITH US</p></li>
