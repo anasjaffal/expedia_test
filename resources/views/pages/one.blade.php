@@ -21,7 +21,7 @@
                         </div>
                     @endif
 
-                    @if( isset($hotels) )
+                    @if( $hotels != null )
                         @foreach($hotels as $hotel)
                         <div class="col-lg-4 col-sm-6">
                             <div class="home-room-box" style="margin-bottom: 85px;">
@@ -43,7 +43,7 @@
                                     <p>{{$hotel->hotelInfo->description}}</p>
                                 </div>
                                 <div class="room-bottom">
-                                    <div class="pull-left"><h4>{{ $hotel->hotelPricingInfo->originalPricePerNight }}<span class="room-bottom-time">/ Day</span></h4></div>
+                                    <div class="pull-left"><h4>{{ $hotel->hotelPricingInfo->originalPricePerNight }}$<span class="room-bottom-time">/ Day</span></h4></div>
                                     <div class="pull-right">
                                         <div class="button-style-1">
                                             <a href="#">BOOK NOW</a>
