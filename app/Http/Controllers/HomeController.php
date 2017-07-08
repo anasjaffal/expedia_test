@@ -38,9 +38,7 @@ class HomeController extends ExpediaController
 
     public function postSearch(Request $request)
     {
-        print_r($request->all());
-        print_r($request->input('dpd1'));
-
+        
         $paramsArray = array(
             'destinationName'   => $request->input('destinationName'),
             'minTripStartDate'  => $request->input('dpd1'),
@@ -50,11 +48,11 @@ class HomeController extends ExpediaController
         );
 
         $queryParams = http_build_query($paramsArray);
-        print_r($this->defaultRequestParam); echo '</br>';
-        print_r($queryParams);die;
+
+        print_r($this->defaultRequestParam . '&'. $queryParams);die;
 
         $response = $this->setHttpMethod('GET')
-            ->setHttpParams($this->defaultRequestParam . $paramsArray)
+            ->setHttpParams($this->defaultRequestParam . '&'. $queryParams)
             ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
