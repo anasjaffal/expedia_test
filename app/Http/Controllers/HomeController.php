@@ -39,14 +39,20 @@ class HomeController extends ExpediaController
     public function postSearch(Request $request)
     {
         print_r($request->all());
-        print_r($request->input('dpd1')); die;
+        print_r($request->input('dpd1'));
 
         $paramsArray = array(
-            'destinationName' => $request->input('destinationName'),
-            ''
+            'destinationName'   => $request->input('destinationName'),
+            'minTripStartDate'  => $request->input('dpd1'),
+            'maxTripStartDate'  => $request->input('dpd2'),
+            'numberOfRoomsLeft' => $request->input('rooms'),
+            'minStarRating'     => $request->input('minStarRating'),
         );
+
+        $queryParams = http_build_query($paramsArray);
+        print_r($queryParams);die;
         $response = $this->setHttpMethod('GET')
-            ->setHttpParams($this->defaultRequestParam)
+            ->setHttpParams($this->defaultRequestParam . $paramsArray)
             ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
