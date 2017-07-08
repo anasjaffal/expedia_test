@@ -23,7 +23,7 @@
                             <hr>
                         </div>
                     @endif
-
+{{$hotels }} {{die;}}}
                     @if( !is_null($hotels)  )
                         <div class="title-style-2 marginb40 pos-center">
                             <h2> ... SORRY NO RESULT FOUND! ...</h2>

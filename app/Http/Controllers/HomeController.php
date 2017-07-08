@@ -59,7 +59,7 @@ class HomeController extends ExpediaController
         } else{
             $resultHotels = $data->offers;
         }
-        
+
         return view('pages.one',['hotels'=> $resultHotels, 'searchDetails' => true]);
     }
 
