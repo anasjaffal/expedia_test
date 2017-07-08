@@ -24,7 +24,7 @@
                         </div>
                     @endif
 
-                    @if( $hotels != null )
+                    @if( $hotels == null )
                         <div class="title-style-2 marginb40 pos-center">
                             <h2> ... SORRY NO RESULT FOUND! ...</h2>
                             <hr>
