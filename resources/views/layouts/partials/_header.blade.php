@@ -66,7 +66,7 @@
                                 </select>
                             </li>
                             <li class="li-select">
-                                <label>MIN STAR RATING</label>
+                                <label>MIN RATING</label>
                                 <select name="minStarRating" class="pretty-select">
                                     <option value="1" >1</option>
                                     <option value="2">2</option>
