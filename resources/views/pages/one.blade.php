@@ -7,11 +7,16 @@
         <div class="explore-rooms margint30 clearfix"><!-- Explore Rooms Section -->
             <div class="container">
                 <div class="row">
-                    <div class="title-style-2 marginb40 pos-center">
-                        <h3>EXPLORE OFFERS</h3>
-                        <hr>
-                    </div>
 
+                    @if(isset($searchDetails))
+
+
+                    @else
+                        <div class="title-style-2 marginb40 pos-center">
+                            <h3>EXPLORE OFFERS</h3>
+                            <hr>
+                        </div>
+                    @endif
                     @foreach($hotels as $hotel)
                     <div class="col-lg-4 col-sm-6">
                         <div class="home-room-box" style="margin-bottom: 85px;">
