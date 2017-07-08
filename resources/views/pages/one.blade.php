@@ -39,7 +39,7 @@
                                     <div class="pull-right room-rating">
                                         <ul>
                                             @for($i = 0; $i < 5; $i++)
-                                            <li><i class="fa fa-star @if ( $i > $hotel->hotelInfo->hotelStarRating ) inactive @endif "></i></li>
+                                            <li><i class="fa fa-star @if ( $i >= $hotel->hotelInfo->hotelStarRating ) inactive @endif "></i></li>
                                             @endfor
                                         </ul>
                                     </div>
