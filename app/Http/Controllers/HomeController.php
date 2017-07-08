@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
 class HomeController extends RestController
 {
@@ -11,13 +10,12 @@ class HomeController extends RestController
     public function __construct()
     {
         $this->setHttpMethod('GET');
-        $this->setHttpParams('scenario=deal-finder&page=foo&uid=foo&productType=Hotel');
-        $this->response = $this->request();
+        $this->response = $this->makeRequest(true);
     }
 
     public function index()
     {
-        $data = \GuzzleHttp\json_decode($this->response->getBody());
+        $data = $this->getResponse();
         return view('pages.one',['hotels'=>$data->offers]);
     }
 }

@@ -14,31 +14,37 @@ class RestController extends Controller
     private $host = 'https';
     private $domain = 'offersvc.expedia.com/';
     private $route = 'offers/v2/getOffers?';
-    private $params = null;
+    private $params = '';
+    private $defaultParams = 'scenario=deal-finder&page=foo&uid=foo&productType=Hotel';
     private $method = 'GET';
+    private $response = null;
 
     public function setHttpMethod($method)
     {
         $this->method = $method;
     }
 
-    public function setHttpParams($params)
+    public function makeRequest($useDefaultQueryParams)
     {
-        $this->params = $params;
-    }
-
-    public function request()
-    {
-
-        $apiUrl =  $this->buildApiUrl();
+        $apiUrl =  $this->buildApiUrl($useDefaultQueryParams);
         $client = new HttpRequest\Client();
-        $res = $client->request($this->method,$apiUrl);
-
-        return $res;
-
+        $this->response = $client->request($this->method,$apiUrl);
     }
 
-    public function getQueryParams($request)
+    public function getResponse()
+    {
+        try
+        {
+            $jsonResponse = \GuzzleHttp\json_decode($this->response->getBody());
+            return $jsonResponse;
+        }
+        catch(\Exception $e)
+        {
+            return new \stdClass();
+        }
+
+    }
+    public function setQueryParams($request)
     {
         $paramsArray = array(
             'destinationName'   => $request->input('destinationName'),
@@ -48,13 +54,15 @@ class RestController extends Controller
             'minStarRating'     => $request->input('minStarRating'),
         );
 
-        $queryParams = http_build_query($paramsArray);
-        return $queryParams;
+        $this->params = http_build_query($paramsArray);
     }
 
-    private function buildApiUrl()
+    private function buildApiUrl($useDefaultQueryParams)
     {
-        return $this->host."://".$this->domain.$this->route.$this->params;
+        if($useDefaultQueryParams)
+            return $this->host."://".$this->domain.$this->route.$this->defaultParams.'&'.$this->params;
+        else
+            return $this->host."://".$this->domain.$this->route.$this->params;
 
     }
 }

@@ -8,12 +8,10 @@
 
 namespace App\Http\Controllers;
 
-use \GuzzleHttp as HttpRequest;
 use Illuminate\Http\Request;
 
 class SearchController extends RestController
 {
-    private $response;
 
     public function __construct()
     {
@@ -22,13 +20,11 @@ class SearchController extends RestController
 
     public function postSearch(Request $request)
     {
-        $queryParams = $this->getQueryParams($request);
-        $this->setHttpParams('scenario=deal-finder&page=foo&uid=foo&productType=Hotel'.'&'.$queryParams);
-        $this->response = $this->request();
+        $this->setQueryParams($request);
+        $this->makeRequest(true);
+        $data = $this->getResponse();
 
-        $data = \GuzzleHttp\json_decode($this->response->getBody());
-
-        if( $data->offers == new \stdClass()){
+        if( $data == new \stdClass()){
             $resultHotels = null;
         } else{
             $resultHotels = $data->offers;
