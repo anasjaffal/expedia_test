@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="pull-left">
                     <div class="logo">
-                        <a href="index.html"><img alt="Logo" src="img/logo.png" class="img-responsive" /></a>
+                        <a href="index.html"><img alt="Logo" src="//www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1" class="img-responsive" /></a>
                     </div>
                 </div>
                 <div class="pull-right">

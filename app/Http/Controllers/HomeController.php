@@ -41,6 +41,7 @@ class HomeController extends ExpediaController
         print_r($request->all());
         print_r($request->input('dpd1')); die;
 
+
         $response = $this->setHttpMethod('GET')
             ->setHttpParams($this->defaultRequestParam)
             ->request();

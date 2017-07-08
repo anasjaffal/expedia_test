@@ -143,7 +143,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-2 col-sm-2 footer-logo">
-                            <img alt="Logo" src="img/logo.png" class="img-responsive" >
+                            <img alt="Logo" src="//www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1" class="img-responsive" >
                         </div>
                         <div class="col-lg-10 col-sm-10">
                             <div class="col-lg-3 col-sm-3">
