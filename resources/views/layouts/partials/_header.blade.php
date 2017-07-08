@@ -47,7 +47,7 @@
                                 {{--<label>DESTINATION</label>--}}
                                 {{--<input type="text" id="destinationName" name="destinationName" required />--}}
                             {{--</li>--}}
-                            <li class="li-select">
+                            <li class="li-input">
                                 <label>DESTINATION</label>
                                 <select name="destinationName" class="pretty-select">
                                     <option selected="selected" value="New York City">New York City; New York
