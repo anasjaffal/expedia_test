@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class HomeController extends ExpediaController
 {
 
+    private $defaultRequestParam = 'scenario=deal-finder&page=foo&uid=foo&productType=Hotel';
+
     public function index(){
 
         $response = $this->setHttpMethod('GET')
@@ -24,7 +26,7 @@ class HomeController extends ExpediaController
 
 
         $response = $this->setHttpMethod('GET')
-            ->setHttpParams('scenario=deal-finder&page=foo&uid=foo&productType=Hotel')
+            ->setHttpParams($this->defaultRequestParam)
             ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
@@ -40,11 +42,10 @@ class HomeController extends ExpediaController
         print_r($request->input('dpd1')); die;
 
         $response = $this->setHttpMethod('GET')
-            ->setHttpParams('scenario=deal-finder&page=foo&uid=foo&productType=Hotel')
+            ->setHttpParams($this->defaultRequestParam)
             ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
-        //print_r($data->offers);
         return view('pages.one',['hotels'=>$data->offers->Hotel]);
     }
 

@@ -5,7 +5,7 @@
                 <div class="slider-textbox clearfix">
                     <div class="container">
                         <div class="row">
-                            <div class="slider-bar pull-left">WELCOME TO LUXEN PREMIUM HOTEL TEMPLATE...</div>
+                            <div class="slider-bar pull-left">WELCOME TO Expedia PREMIUM</div>
                             <div class="slider-triangle pull-left"></div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
                 <div class="slider-textbox clearfix">
                     <div class="container">
                         <div class="row">
-                            <div class="slider-bar pull-left">WELCOME TO LUXEN PREMIUM HOTEL TEMPLATE...</div>
+                            <div class="slider-bar pull-left">WELCOME TO Expedia PREMIUM</div>
                             <div class="slider-triangle pull-left"></div>
                         </div>
                     </div>
@@ -44,6 +44,10 @@
                     <form action="/search"  method="post" >
                         <ul class="clearfix">
                             <li class="li-input">
+                                <label>DESTINATION</label>
+                                <input type="text" id="destinationName" name="destinationName" required />
+                            </li>
+                            <li class="li-input">
                                 <label>ARRIVAL</label>
                                 <input type="text" id="dpd1" name="dpd1" data-date-format="yyyy/mm/dd" class="date-selector" placeholder="&#xf073;" required />
                             </li>
@@ -62,26 +66,26 @@
                                 </select>
                             </li>
                             <li class="li-select">
-                                <label>ADULT</label>
-                                <select name="adult" class="pretty-select">
-                                    <option selected="selected" value="1" >1</option>
+                                <label>MIN STAR RATING</label>
+                                <select name="minStarRating" class="pretty-select">
+                                    <option value="1" >1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
-                                    <option value="5">5</option>
+                                    <option selected="selected" value="5">5</option>
                                 </select>
                             </li>
-                            <li class="li-select">
-                                <label>CHILDREN</label>
-                                <select name="children" class="pretty-select">
-                                    <option selected="selected" value="0" >0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </li>
+                            {{--<li class="li-select">--}}
+                                {{--<label>CHILDREN</label>--}}
+                                {{--<select name="children" class="pretty-select">--}}
+                                    {{--<option selected="selected" value="0" >0</option>--}}
+                                    {{--<option value="1">1</option>--}}
+                                    {{--<option value="2">2</option>--}}
+                                    {{--<option value="3">3</option>--}}
+                                    {{--<option value="4">4</option>--}}
+                                    {{--<option value="5">5</option>--}}
+                                {{--</select>--}}
+                            {{--</li>--}}
                             <li>
                                 <div class="button-style-1">
                                     <input type="submit" id="res-submits" value="SEARCH" />
