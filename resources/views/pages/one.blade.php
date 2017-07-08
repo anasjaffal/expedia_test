@@ -21,13 +21,13 @@
                         </div>
                     @endif
 
-                    @if( empty($hotels->Hotels) )
+                    @if( empty($hotels->Hotel) )
                         <div class="title-style-2 marginb40 pos-center">
                             <h2> ... SORRY NO RESULT FOUND! ...</h2>
                             <hr>
                         </div>
                     @else
-                        @foreach($hotels->Hotels as $hotel)
+                        @foreach($hotels->Hotel->Hotels as $hotel)
                             <div class="col-lg-4 col-sm-6">
                                 <div class="home-room-box" style="margin-bottom: 85px;">
                                     <div class="room-image">
