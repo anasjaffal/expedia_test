@@ -9,7 +9,7 @@
                 <div class="row">
 
                     @if(isset($searchDetails))
-                        @if( !isset($hotels)  )
+                        @if( !is_null($hotels)  )
                             <div class="title-style-2 marginb40 pos-center">
                                 <h4>Travel Start Date: {{ $hotels->Hotel[0]->offerDateRange->travelStartDate[2]}} / {{ $hotels->Hotel[0]->offerDateRange->travelStartDate[1] }} / {{ $hotels->Hotel[0]->offerDateRange->travelStartDate[0] }} AND </h4>
                                 <h4>Travel End Date: {{ $hotels->Hotel[0]->offerDateRange->travelEndDate[2]}} / {{ $hotels->Hotel[0]->offerDateRange->travelEndDate[1] }}/ {{ $hotels->Hotel[0]->offerDateRange->travelEndDate[0] }}</h4>
@@ -24,7 +24,7 @@
                         </div>
                     @endif
 
-                    @if( !isset($hotels)  )
+                    @if( !is_null($hotels)  )
                         <div class="title-style-2 marginb40 pos-center">
                             <h2> ... SORRY NO RESULT FOUND! ...</h2>
                             <hr>
