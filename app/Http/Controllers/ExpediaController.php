@@ -36,13 +36,7 @@ class ExpediaController extends Controller
         $apiUrl =  $this->buildApiUrl();
         $client = new HttpRequest\Client();
         $res = $client->request($this->method,$apiUrl);
-//        echo $res->getStatusCode();
-//        // 200
-//        echo $res->getHeaderLine('content-type');
-//        // 'application/json; charset=utf8'
-//        echo $res->getBody();
-//        // '{"id": 1420053, "name": "guzzle", ...}'
-
+        
         return $res;
 
     }

@@ -13,6 +13,4 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/searchForHotels', 'HomeController@searchForHotels');
-
 Route::post('/search','HomeController@postSearch');

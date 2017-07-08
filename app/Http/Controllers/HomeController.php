@@ -16,24 +16,10 @@ class HomeController extends ExpediaController
         ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
-//        print_r($data->offers); die;
+
         return view('pages.one',['hotels'=>$data->offers]);
 
     }
-
-//    public function searchForHotels(){
-//
-//
-//        $response = $this->setHttpMethod('GET')
-//            ->setHttpParams($this->defaultRequestParam)
-//            ->request();
-//
-//        $data = \GuzzleHttp\json_decode($response->getBody());
-//
-//        return view('pages.one',['hotels'=>$data->offers->Hotel]);
-//
-//
-//    }
 
     public function postSearch(Request $request)
     {
