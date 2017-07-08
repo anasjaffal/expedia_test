@@ -31,13 +31,15 @@ class HomeController extends ExpediaController
 
         $data = \GuzzleHttp\json_decode($response->getBody());
         //print_r($data->offers);
-        return view('pages.one',['hotels'=>$data->offers->Hotel]);
+        return view('pages.one',['hotels'=>$data->offers->Hotel, 'results' => ture]);
 
 
     }
 
     public function postSearch(Request $request)
     {
+
+        $resultsExist = true;
 
         $paramsArray = array(
             'destinationName'   => $request->input('destinationName'),
@@ -54,12 +56,12 @@ class HomeController extends ExpediaController
             ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
-        $results = true;
+
         if(!isset($data->offers->Hotel)){
-            $results = false;
+            $resultsExist = false;
         }
 
-        return view('pages.one',['results' => $results, 'hotels'=>$data->offers->Hotel, 'searchDetails' => true]);
+        return view('pages.one',['hotels'=> $data->offers->Hotel, 'results' => $resultsExist, 'searchDetails' => true]);
     }
 
 }

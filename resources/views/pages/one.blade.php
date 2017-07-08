@@ -20,7 +20,8 @@
                             <hr>
                         </div>
                     @endif
-                    @if($results)
+
+                    @if( $results )
                         @foreach($hotels as $hotel)
                         <div class="col-lg-4 col-sm-6">
                             <div class="home-room-box" style="margin-bottom: 85px;">
