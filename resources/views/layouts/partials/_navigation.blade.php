@@ -78,9 +78,6 @@
                         </nav>
                     </div>
                     <div class="pull-right">
-                        <div class="button-style-1 margint45">
-                            <a href="reservation-form-dark.html"><i class="fa fa-calendar"></i>BOOK NOW</a>
-                        </div>
                     </div>
                 </div>
             </div>

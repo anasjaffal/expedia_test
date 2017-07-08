@@ -10,11 +10,11 @@ class HomeController extends RestController
     public function __construct()
     {
         $this->setHttpMethod('GET');
-        $this->response = $this->makeRequest(true);
     }
 
     public function index()
     {
+        $this->response = $this->makeRequest(true);
         $data = $this->getResponse();
         return view('pages.one',['hotels'=>$data->offers]);
     }

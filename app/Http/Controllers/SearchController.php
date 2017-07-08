@@ -24,7 +24,7 @@ class SearchController extends RestController
         $this->makeRequest(true);
         $data = $this->getResponse();
 
-        if( $data == new \stdClass()){
+        if( $data->offers == new \stdClass() || $data == new \stdClass()){
             $resultHotels = null;
         } else{
             $resultHotels = $data->offers;
