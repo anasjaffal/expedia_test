@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="title-style-2 marginb40 pos-center">
-                        <h3>EXPLORE ROOMS</h3>
+                        <h3>EXPLORE OFFERS</h3>
                         <hr>
                     </div>
 

@@ -47,7 +47,7 @@
                                 {{--<label>DESTINATION</label>--}}
                                 {{--<input type="text" id="destinationName" name="destinationName" required />--}}
                             {{--</li>--}}
-                            <li class="li-input">
+                            <li class="li-select">
                                 <label>DESTINATION</label>
                                 <select name="destinationName" class="pretty-select">
                                     <option selected="selected" value="New York City">New York City; New York
@@ -66,11 +66,11 @@
                             </li>
                             <li class="li-input">
                                 <label>ARRIVAL</label>
-                                <input type="text" id="dpd1" name="dpd1" data-date-format="yyyy/mm/dd" class="date-selector" placeholder="&#xf073;" required />
+                                <input type="text" id="dpd1" name="dpd1" data-date-format="yyyy-mm-dd" class="date-selector" placeholder="&#xf073;" required />
                             </li>
                             <li class="li-input">
                                 <label>DEPARTURE</label>
-                                <input type="text" id="dpd2" name="dpd2" data-date-format="yyyy/mm/dd" class="date-selector" placeholder="&#xf073;" required />
+                                <input type="text" id="dpd2" name="dpd2" data-date-format="yyyy-mm-dd" class="date-selector" placeholder="&#xf073;" required />
                             </li>
                             <li class="li-select">
                                 <label>ROOMS</label>
