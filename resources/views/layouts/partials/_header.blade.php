@@ -50,17 +50,17 @@
                             <li class="li-select">
                                 <label>DESTINATION</label>
                                 <select name="destinationName" class="pretty-select">
-                                    <option selected="selected" value="New York City">New York City; New York
+                                    <option selected="selected" value="new york city">New York City; New York
                                     </option>
-                                    <option value="Chicago" >Chicago; Illinois
+                                    <option value="chicago" >Chicago; Illinois
                                     </option>
-                                    <option value="Houston">Houston; Texas
+                                    <option value="houston">Houston; Texas
                                     </option>
-                                    <option value="Dallas">Dallas; Texas
+                                    <option value="dallas">Dallas; Texas
                                     </option>
-                                    <option value="Seattle">Seattle; Washington
+                                    <option value="seattle">Seattle; Washington
                                     </option>
-                                    <option value="Detroit">Detroit; Michigan
+                                    <option value="detroit">Detroit; Michigan
                                     </option>
                                 </select>
                             </li>
