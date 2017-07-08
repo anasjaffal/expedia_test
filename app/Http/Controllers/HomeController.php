@@ -50,7 +50,9 @@ class HomeController extends ExpediaController
         );
 
         $queryParams = http_build_query($paramsArray);
+        print_r($this->defaultRequestParam); echo '</br>';
         print_r($queryParams);die;
+
         $response = $this->setHttpMethod('GET')
             ->setHttpParams($this->defaultRequestParam . $paramsArray)
             ->request();
