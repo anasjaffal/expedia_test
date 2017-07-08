@@ -24,15 +24,13 @@ class HomeController extends ExpediaController
     public function searchForHotels(){
 
 
-        $resultsExist = true;
-
         $response = $this->setHttpMethod('GET')
             ->setHttpParams($this->defaultRequestParam)
             ->request();
 
         $data = \GuzzleHttp\json_decode($response->getBody());
 
-        return view('pages.one',['hotels'=>$data->offers->Hotel, 'results' => $resultsExist]);
+        return view('pages.one',['hotels'=>$data->offers->Hotel]);
 
 
     }
