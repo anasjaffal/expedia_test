@@ -10,7 +10,6 @@
 
                     @if(isset($searchDetails))
                         <div class="title-style-2 marginb40 pos-center">
-                            <h4>Destination: {{ $hotels[0]->destination->longName}}</h4><br/>
                             <h4>Travel Start Date: {{ $hotels[0]->offerDateRange->travelStartDate[2]}} / {{ $hotels[0]->offerDateRange->travelStartDate[1] }} / {{ $hotels[0]->offerDateRange->travelStartDate[0] }} AND </h4>
                             <h4>Travel End Date: {{ $hotels[0]->offerDateRange->travelEndDate[2]}} / {{ $hotels[0]->offerDateRange->travelEndDate[1] }}/ {{ $hotels[0]->offerDateRange->travelEndDate[0] }}</h4>
                             <hr>

@@ -43,27 +43,27 @@
                 <div class="reserve-form-area">
                     <form action="/search"  method="post" >
                         <ul class="clearfix">
-                            {{--<li class="li-input">--}}
-                                {{--<label>DESTINATION</label>--}}
-                                {{--<input type="text" id="destinationName" name="destinationName" required />--}}
-                            {{--</li>--}}
-                            <li class="li-select">
+                            <li class="li-input">
                                 <label>DESTINATION</label>
-                                <select name="destinationName" class="pretty-select">
-                                    <option selected="selected" value="new york city">New York City; New York
-                                    </option>
-                                    <option value="chicago" >Chicago; Illinois
-                                    </option>
-                                    <option value="houston">Houston; Texas
-                                    </option>
-                                    <option value="dallas">Dallas; Texas
-                                    </option>
-                                    <option value="seattle">Seattle; Washington
-                                    </option>
-                                    <option value="detroit">Detroit; Michigan
-                                    </option>
-                                </select>
+                                <input type="text" id="destinationName" name="destinationName" required />
                             </li>
+                            {{--<li class="li-select">--}}
+                                {{--<label>DESTINATION</label>--}}
+                                {{--<select name="destinationName" class="pretty-select">--}}
+                                    {{--<option selected="selected" value="Puerto Vallarta">Puerto Vallarta--}}
+                                    {{--</option>--}}
+                                    {{--<option value="Sayulita" >Sayulita--}}
+                                    {{--</option>--}}
+                                    {{--<option value="Florence">Florence--}}
+                                    {{--</option>--}}
+                                    {{--<option value="Prague">Prague--}}
+                                    {{--</option>--}}
+                                    {{--<option value="Savannah">Savannah--}}
+                                    {{--</option>--}}
+                                    {{--<option value="detroit">Detroit; Michigan--}}
+                                    {{--</option>--}}
+                                {{--</select>--}}
+                            {{--</li>--}}
                             <li class="li-input">
                                 <label>ARRIVAL</label>
                                 <input type="text" id="dpd1" name="dpd1" data-date-format="yyyy-mm-dd" class="date-selector" placeholder="&#xf073;" required />
