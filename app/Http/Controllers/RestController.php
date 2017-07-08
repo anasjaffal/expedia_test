@@ -2,17 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: ajaffal
- * Date: 7/7/17
- * Time: 6:29 PM
+ * Date: 7/8/17
+ * Time: 9:10 PM
  */
 
 namespace App\Http\Controllers;
-
 use \GuzzleHttp as HttpRequest;
 
-class ExpediaController extends Controller
+class RestController extends Controller
 {
-
     private $host = 'https';
     private $domain = 'offersvc.expedia.com/';
     private $route = 'offers/v2/getOffers?';
@@ -38,6 +36,20 @@ class ExpediaController extends Controller
 
         return $res;
 
+    }
+
+    public function getQueryParams($request)
+    {
+        $paramsArray = array(
+            'destinationName'   => $request->input('destinationName'),
+            'minTripStartDate'  => $request->input('dpd1'),
+            'maxTripStartDate'  => $request->input('dpd2'),
+            'numberOfRoomsLeft' => $request->input('rooms'),
+            'minStarRating'     => $request->input('minStarRating'),
+        );
+
+        $queryParams = http_build_query($paramsArray);
+        return $queryParams;
     }
 
     private function buildApiUrl()
