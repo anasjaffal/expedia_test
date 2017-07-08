@@ -27,7 +27,7 @@
                             <hr>
                         </div>
                     @else
-                        @foreach($hotels->Hotel->Hotels as $hotel)
+                        @foreach($hotels->Hotel as $hotel)
                             <div class="col-lg-4 col-sm-6">
                                 <div class="home-room-box" style="margin-bottom: 85px;">
                                     <div class="room-image">
