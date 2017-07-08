@@ -41,7 +41,7 @@
                                 <p>{{$hotel->hotelInfo->description}}</p>
                             </div>
                             <div class="room-bottom">
-                                <div class="pull-left"><h4>89$<span class="room-bottom-time">/ Day</span></h4></div>
+                                <div class="pull-left"><h4>{{ $hotel->hotelInfo->hotelPricingInfo->originalPricePerNight }}<span class="room-bottom-time">/ Day</span></h4></div>
                                 <div class="pull-right">
                                     <div class="button-style-1">
                                         <a href="#">BOOK NOW</a>
