@@ -54,7 +54,7 @@ class HomeController extends ExpediaController
 
         $data = \GuzzleHttp\json_decode($response->getBody());
 
-        if( $data->offers == new stdClass()){
+        if( $data->offers == new \stdClass()){
             $resultHotels = null;
         } else{
             $resultHotels = $data->offers;
