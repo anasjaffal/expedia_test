@@ -29,11 +29,9 @@
                                     </div>
                                     <div class="pull-right room-rating">
                                         <ul>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star inactive"></i></li>
+                                            @for($i = 0; $i < 5; $i++)
+                                            <li><i class="fa fa-star @if (hotelStarRating < $i) inactive @endif "></i></li>
+                                            @endfor
                                         </ul>
                                     </div>
                                 </div>
