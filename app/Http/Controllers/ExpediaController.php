@@ -22,21 +22,20 @@ class ExpediaController extends Controller
     public function setHttpMethod($method)
     {
         $this->method = $method;
-        return $this;
     }
 
     public function setHttpParams($params)
     {
         $this->params = $params;
-        return $this;
     }
 
-    public function request(){
+    public function request()
+    {
 
         $apiUrl =  $this->buildApiUrl();
         $client = new HttpRequest\Client();
         $res = $client->request($this->method,$apiUrl);
-        
+
         return $res;
 
     }
