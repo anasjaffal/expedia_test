@@ -83,8 +83,8 @@
                                 </select>
                             </li>
                             <li>
-                                <input class="button-style-1">
-                                    <input type="submit" id="res-submits" ><i class="fa fa-search"></i>SEARCH</input>
+                                <div class="button-style-1">
+                                    <input type="submit" id="res-submits" value="SEARCH" />
                                 </div>
                             </li>
                         </ul>
