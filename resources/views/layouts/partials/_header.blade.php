@@ -43,9 +43,26 @@
                 <div class="reserve-form-area">
                     <form action="/search"  method="post" >
                         <ul class="clearfix">
-                            <li class="li-input">
+                            {{--<li class="li-input">--}}
+                                {{--<label>DESTINATION</label>--}}
+                                {{--<input type="text" id="destinationName" name="destinationName" required />--}}
+                            {{--</li>--}}
+                            <li class="li-select">
                                 <label>DESTINATION</label>
-                                <input type="text" id="destinationName" name="destinationName" required />
+                                <select name="destinationName" class="pretty-select">
+                                    <option selected="selected" value="New York City">New York City; New York
+                                    </option>
+                                    <option value="Chicago" >Chicago; Illinois
+                                    </option>
+                                    <option value="Houston">Houston; Texas
+                                    </option>
+                                    <option value="Dallas">Dallas; Texas
+                                    </option>
+                                    <option value="Seattle">Seattle; Washington
+                                    </option>
+                                    <option value="Detroit">Detroit; Michigan
+                                    </option>
+                                </select>
                             </li>
                             <li class="li-input">
                                 <label>ARRIVAL</label>
