@@ -1,51 +1,76 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Expedia - PHP Task
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Simple site for expedia.com, which consume expedia.com API's that includes filters for Hotel reservations and releated data through requesting different parameters in the API queryString and displaying them on web page.
+#### Application URL:
+```sh
+https://secret-harbor-15718.herokuapp.com/
+```
 
-## About Laravel
+## Site Structure:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+The structure of the application is very simple and contains:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- PHP
+- Laravel 5.4 Framework
+- GuzzleHttp
+- Bootstrap 3
+- JQuery
+- Blade template engine
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+## Dependencies:
 
-## Learning Laravel
+- Heroku
+- php
+- Laravel Framework
+- composer
+- git
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+## Features:
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+- List latest offers.
+- Search for offers (Destination name, Travel start/end date, Rating and more).
+- Hotel details view (Pricing, Location, Description, image,...)
+- Responsive site.
+ 
+## Code Structure:
 
-## Laravel Sponsors
+I divided the core project business into 3 main classes:
+- Home Controller, *which contains the landing  page and its hotels offer list.*
+- Search Controller, *which will consume the API and return the result.*
+- Rest Controller, *this controller to handle all requests and return the result to other controllers.*
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+## Template:
 
-## Contributing
+I used the blade template engine, and below the main parts of the site:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+- master.blade.php : *main site view that contains all page parts(header, navigation, content,  and footer).*
+- one.blade.php: *Represent hotels search result and information.*
+- _header.blade.php: *the header of the page.*
+- _footer.blade.php: *the footer of the page.*
+- _navigtion.blade.php: *the navigation of the page.*
 
-## Security Vulnerabilities
+## Site deployment / Installation:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+> I assume you already have heroku account, make sure that you have PHP, Composer, and Git.
+* Clone site source code for expedia application so that you have a local version of the code that you can then deploy to Heroku.
+```sh 
+$ git clone https://github.com/anasApp.git
+$ cd php-getting-started
+```
+- deploy the app to Heroku
+```sh 
+$ heroku create
+```
+- Now deploy your code and open Heroku:
+```sh 
+$ git push heroku master
+$ heroku ps:scale web=1 // to make sure that at least one instance is running
+$ heroku open
+```
 
-## License
+> Visit My website. https://secret-harbor-15718.herokuapp.com/
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+## Issues:
+
+> API image size.

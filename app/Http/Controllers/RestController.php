@@ -19,11 +19,21 @@ class RestController extends Controller
     private $method = 'GET';
     private $response = null;
 
+    /**
+     * Set http Method ('GET', 'POST', ...)
+     *
+     * @param string $method
+     */
     public function setHttpMethod($method)
     {
         $this->method = $method;
     }
 
+    /**
+     * Preparing the Request param and hit API.
+     *
+     * @param bool $useDefaultQueryParams
+     */
     public function makeRequest($useDefaultQueryParams)
     {
         $apiUrl =  $this->buildApiUrl($useDefaultQueryParams);
@@ -31,6 +41,11 @@ class RestController extends Controller
         $this->response = $client->request($this->method,$apiUrl);
     }
 
+    /**
+     * Get JSON response.
+     *
+     * @return Object
+     */
     public function getResponse()
     {
         try
@@ -44,6 +59,12 @@ class RestController extends Controller
         }
 
     }
+
+    /**
+     * Set main query params
+     *
+     * @param Object $request
+     */
     public function setQueryParams($request)
     {
         $paramsArray = array(
@@ -57,6 +78,12 @@ class RestController extends Controller
         $this->params = http_build_query($paramsArray);
     }
 
+    /**
+     * Build the query string
+     *
+     * @param bool $useDefaultQueryParams
+     * @return string
+     */
     private function buildApiUrl($useDefaultQueryParams)
     {
         if($useDefaultQueryParams)

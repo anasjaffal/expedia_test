@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ajaffal
- * Date: 7/7/17
- * Time: 6:29 PM
- */
 
 namespace App\Http\Controllers;
 
@@ -20,10 +14,14 @@ class SearchController extends RestController
 
     public function postSearch(Request $request)
     {
+        // setting Query Params to prepare the request
         $this->setQueryParams($request);
+
+        // to make a list request and return the response.
         $this->makeRequest(true);
         $data = $this->getResponse();
 
+        // handling empty requests
         if( $data->offers == new \stdClass() || $data == new \stdClass()){
             $resultHotels = null;
         } else{
